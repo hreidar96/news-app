@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import React, { FormEvent, useState } from "react";
+import { FormEvent, useState } from "react";
 
 function SearchBox() {
   const [input, setInput] = useState("");
@@ -24,8 +24,9 @@ function SearchBox() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Search Keywords..."
-        className="w-full rounded-sm placeholder-gray-500 text-gray-500 outline-none flex-1 bg-transparent dark:text-orange-400 "
+        className="w-full h-14 rounded-sm placeholder-gray-500 text-gray-500 outline-none flex-1 bg-transparent dark:text-orange-400"
       />
+
       <button
         type="submit"
         disabled={!input}
